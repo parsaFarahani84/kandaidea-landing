@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.bgImageHero {
+  background-image: url(../public/slider3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "DIN";
+  src: url('../public/DIN/DIN\ Alternate\ Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "DIN", sans-serif;
+  overflow-x: hidden;
+}
+
+.buttonSwiper {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.buttonNumber {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 100% 100%, 0 99%, 0% 50%);
+}
+
+.strokeText {
+  -webkit-text-stroke: 1px blue;
+  color: transparent;
+}
+
+.strokeTextSwiper {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
